@@ -26,7 +26,6 @@ RESTful API是一种基于REST架构风格的Web服务接口。它使用HTTP协�
 
 5. 如何连接到MongoDB数据库？
 可以使用`mongoose`库来连接MongoDB数据库。示例代码如下：
-```javascript
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/mydatabase', { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -35,6 +34,7 @@ mongoose.connect('mongodb://localhost:27017/mydatabase', { useNewUrlParser: true
 
 7. 如何处理GET/POST请求？
 可以使用express框架来处理GET和POST请求。示例代码如下
+
 const express = require('express');
 const app = express();
 
@@ -52,8 +52,8 @@ app.listen(3000, () => {
 
 8. Node.js中如何处理文件读写？
 可以使用fs模块来处理文件读写。示例代码如下：
-const fs = require('fs');
 
+const fs = require('fs');
 // 读取文件
 fs.readFile('example.txt', 'utf8', (err, data) => {
   if (err) throw err;
